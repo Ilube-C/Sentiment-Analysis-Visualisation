@@ -6,14 +6,18 @@ Created on Fri Nov 26 15:26:53 2021
 """
 #libraries for removing punctuation
 import re
-import string 
+import string
+import os
 
 test = True
 
 import lyricsgenius
+from dotenv import load_dotenv
+#load environment variables from .env file
+load_dotenv()
 #instantiation of genius object
+#client access token provided by Genius, loaded from the .env file
 genius = lyricsgenius.Genius(os.environ['GENIUS_ACCESS_TOKEN'])
-#client access token provided by Genius
 
 
 

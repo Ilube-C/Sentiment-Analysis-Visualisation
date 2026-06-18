@@ -1,3 +1,4 @@
 lyricsgenius
 nltk
 nrclex
+python-dotenv
